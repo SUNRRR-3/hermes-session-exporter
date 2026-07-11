@@ -17,9 +17,9 @@ metadata:
 从 Hermes 的 `state.db` SQLite 数据库中导出任意会话的完整对话历史为 Markdown 文件。适用于**任何项目**——只需提供标题关键词或 session_id，即可导出为可读的备份文档，防止上下文压缩后信息丢失。
 
 示例场景：
-- 当前项目 → 导出 `title LIKE '%项目关键词%'`
-- 数据报告项目 → 导出 `title LIKE '%数据复盘%'`
-- 任何项目 → 导出 `--ids "session_id_1,session_id_2"`
+- 搜索项目会话 → 导出 `title LIKE '%项目关键词%'`
+- 精确导出 → 导出 `--ids "session_id_1,session_id_2"`
+- 按时间范围 → 结合 SQL 时间过滤批量导出
 
 ## When to Use
 
